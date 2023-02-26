@@ -1,0 +1,12 @@
+#pragma once
+#include <vector>
+#include <string>
+class modAlphaCipher
+{
+private:
+    int key; //ключ
+public:
+    modAlphaCipher()=delete; 
+    modAlphaCipher(const std::string& skey); 
+    std::string encrypt(const std::string& text); 
+    std::string decrypt(const std::string& dctext);
